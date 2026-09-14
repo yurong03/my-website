@@ -1763,7 +1763,7 @@ footer {
 
 
 <!-- =========================
-     水產資料庫
+     水產資料庫 (包含全部 7 個水產)
 ========================= -->
 
 <section
@@ -1887,7 +1887,105 @@ footer {
         </div>
 
 
-        <!-- 4. 海菜 -->
+        <!-- 4. 花枝 -->
+
+        <div class="seafood-card">
+
+            <img
+                class="seafood-photo"
+                src="https://raw.githubusercontent.com/yurong03/my-website/main/images/cuttlefish.png"
+                alt="花枝"
+            >
+
+            <div class="seafood-info">
+
+                <h3>
+                    🦑 花枝
+                </h3>
+
+                <p>
+                    口感Q彈，
+                    是常見的海鮮食材。
+                </p>
+
+                <button
+                    class="more-button"
+                    onclick="openModal('cuttlefish')"
+                >
+                    查看介紹 →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- 5. 章魚 -->
+
+        <div class="seafood-card">
+
+            <img
+                class="seafood-photo"
+                src="https://raw.githubusercontent.com/yurong03/my-website/main/images/octopus.png"
+                alt="章魚"
+            >
+
+            <div class="seafood-info">
+
+                <h3>
+                    🐙 章魚
+                </h3>
+
+                <p>
+                    肉質有嚼勁，
+                    是澎湖飲食中的常見食材。
+                </p>
+
+                <button
+                    class="more-button"
+                    onclick="openModal('octopus')"
+                >
+                    查看介紹 →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- 6. 鮮魚 -->
+
+        <div class="seafood-card">
+
+            <img
+                class="seafood-photo"
+                src="https://raw.githubusercontent.com/yurong03/my-website/main/images/fish.png"
+                alt="澎湖鮮魚"
+            >
+
+            <div class="seafood-info">
+
+                <h3>
+                    🐠 鮮魚
+                </h3>
+
+                <p>
+                    澎湖周圍海域具有豐富的魚類資源。
+                </p>
+
+                <button
+                    class="more-button"
+                    onclick="openModal('fish')"
+                >
+                    查看介紹 →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- 7. 海菜 -->
 
         <div class="seafood-card">
 
@@ -2206,7 +2304,7 @@ footer {
 
 
 <!-- =========================
-     控制腳本 (JavaScript)
+     控制腳本 (包含 7 個水產完整資料)
 ========================= -->
 
 <script>
@@ -2234,7 +2332,31 @@ const seafoodData = {
         freshness: "魚體完整無斷裂、眼睛明亮亮白、體側帶有漂亮的銀藍色亮帶。",
         cooking: "丁香魚炒花生、小魚干干貝醬、曬乾煮湯鮮美爆表。",
         tourism: "白沙赤崁村觀賞曬丁香魚場景、體驗加工過程。",
-        eco: "遵守每年 6 月的「保育禁漁期」，讓幼魚有時間長大繁衍。"
+        eco: "嚴格遵守每年 6 月的「保育禁漁期」，讓幼魚有足夠時間生長繁衍。"
+    },
+    cuttlefish: {
+        title: "🦑 澎湖花枝（烏賊）",
+        season: "12 月至 4 月（冬春之交最為厚實肥美）",
+        freshness: "外表花紋清晰呈斑駁狀、肉質厚實緊實有彈性、外膜無破損脫落。",
+        cooking: "手打花枝丸、花枝排、芹菜炒花枝、墨魚香腸。",
+        tourism: "參觀在地水產加工廠、體驗傳統手打花枝丸 DIY 活動。",
+        eco: "選擇達適性大小的成體，支持標示友善捕撈及合格衛生加工的水產品。"
+    },
+    octopus: {
+        title: "🐙 澎湖章魚",
+        season: "2 月至 4 月（元宵節至清明節前後）",
+        freshness: "體表潮濕有光澤、觸手吸盤完整具拉力、肉質緊密扎實。",
+        cooking: "傳統石醃章魚、大蒜炒章魚、川燙章魚薄片沾五味醬。",
+        tourism: "潮間帶夜間抱墩體驗、尋找章魚與隱蔽岩礁生態觀察。",
+        eco: "澎湖章魚為保育物種，需嚴格遵守特定區域與期間的禁捕規定，切勿採捕幼章魚。"
+    },
+    fish: {
+        title: "🐠 澎湖鮮魚（加志、紅鯛、石斑）",
+        season: "全年盛產（隨季節不同魚種交替，秋冬油脂豐富）",
+        freshness: "魚眼水晶體清澈凸起、魚鰓呈鮮紅色無異味、魚肉按壓有彈性。",
+        cooking: "清蒸野生石斑、鮮魚酸菜湯、乾煎紅鯛、澎湖味噌魚湯。",
+        tourism: "馬公第三漁港早市導覽、石滬捕魚傳統文化導覽。",
+        eco: "遵循永續海鮮指南：優先選購中低階層魚類、避開保育類及繁殖期魚種。"
     },
     seaweed: {
         title: "🌿 澎湖綠金 - 海菜",
@@ -2242,7 +2364,7 @@ const seafoodData = {
         freshness: "顏色翠綠無黃化、無雜質與沙粒、帶有淡淡海洋植物香氣。",
         cooking: "海菜小魚湯、海菜花枝丸湯、海菜煎餅、海菜蒸蛋。",
         tourism: "冬季前往礁岩潮間帶觀賞在地居民「徒手採海菜（刮海菜）」景致。",
-        eco: "純天然野生採集，洗滌時節約用水，維持潮間帶生態多樣性。"
+        eco: "純天然野生採集，洗滌時節約用水，維護潮間帶生態多樣性。"
     }
 };
 
