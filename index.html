@@ -10,6 +10,7 @@
 
 <title>澎湖水產飲食課</title>
 
+
 <style>
 
 /* =========================
@@ -26,12 +27,14 @@ html {
 
 body {
     margin: 0;
+
     font-family:
         "Microsoft JhengHei",
         Arial,
         sans-serif;
 
     background: #eefaff;
+
     color: #164b60;
 }
 
@@ -42,13 +45,17 @@ body {
 
 nav {
     position: sticky;
+
     top: 0;
+
     z-index: 100;
 
-    height: 75px;
+    min-height: 75px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     padding: 0 6%;
@@ -59,24 +66,32 @@ nav {
         0 2px 12px rgba(0,0,0,0.12);
 }
 
+
 .logo {
     display: flex;
+
     align-items: center;
 
     font-size: 25px;
+
     font-weight: bold;
 
     color: #087da0;
 }
 
+
 .menu {
     display: flex;
+
     gap: 25px;
 }
 
+
 .menu a {
     display: flex;
+
     align-items: center;
+
     gap: 6px;
 
     color: #087da0;
@@ -88,8 +103,10 @@ nav {
     transition: 0.3s;
 }
 
+
 .menu a:hover {
     transform: translateY(-3px);
+
     color: #004f69;
 }
 
@@ -106,15 +123,19 @@ nav {
     overflow: hidden;
 }
 
+
 .hero svg {
     position: absolute;
 
     width: 100%;
+
     height: 100%;
 
     left: 0;
+
     top: 0;
 }
+
 
 .hero-content {
     position: relative;
@@ -130,6 +151,7 @@ nav {
     text-align: center;
 }
 
+
 .hero-content h1 {
     margin: 0 0 20px;
 
@@ -141,6 +163,7 @@ nav {
         2px 2px 0 white;
 }
 
+
 .hero-content p {
     font-size: 23px;
 
@@ -150,6 +173,7 @@ nav {
 
     font-weight: bold;
 }
+
 
 .explore-button {
     display: inline-block;
@@ -176,21 +200,11 @@ nav {
     transition: 0.3s;
 }
 
+
 .explore-button:hover {
     transform: scale(1.05);
-}
 
-
-/* =========================
-   波浪分隔
-========================= */
-
-.wave {
-    display: block;
-
-    width: 100%;
-
-    margin-top: -5px;
+    background: #075c7a;
 }
 
 
@@ -206,11 +220,13 @@ nav {
     padding: 70px 25px;
 }
 
+
 .section-title {
     text-align: center;
 
     margin-bottom: 45px;
 }
+
 
 .section-title h2 {
     font-size: 38px;
@@ -220,6 +236,7 @@ nav {
     margin-bottom: 12px;
 }
 
+
 .section-title p {
     font-size: 18px;
 
@@ -228,19 +245,76 @@ nav {
 
 
 /* =========================
+   SVG 課程內容
+========================= */
+
+.course-svg-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+}
+
+
+.course-title {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.course-title h2 {
+    font-size: 38px;
+
+    color: #087da0;
+
+    margin-bottom: 12px;
+}
+
+
+.course-title p {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #426675;
+}
+
+
+.course-map {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.12);
+}
+
+
+/* =========================
    課程介紹
 ========================= */
 
 .course-intro {
+    max-width: 1150px;
+
+    margin: 0 auto 70px;
+
+    padding: 45px;
+
     background: white;
 
     border-radius: 25px;
 
-    padding: 45px;
-
     box-shadow:
         0 5px 25px rgba(0,0,0,0.08);
 }
+
 
 .course-intro > p {
     font-size: 18px;
@@ -254,6 +328,7 @@ nav {
     margin: auto;
 }
 
+
 .course-cards {
     display: grid;
 
@@ -264,6 +339,7 @@ nav {
 
     margin-top: 45px;
 }
+
 
 .course-card {
     text-align: center;
@@ -277,18 +353,26 @@ nav {
     transition: 0.3s;
 }
 
+
 .course-card:hover {
     transform: translateY(-8px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
 }
+
 
 .icon-circle {
     width: 75px;
+
     height: 75px;
 
     margin: auto;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 50%;
@@ -296,7 +380,10 @@ nav {
     background: #087da0;
 
     color: white;
+
+    font-size: 30px;
 }
+
 
 .course-card h3 {
     color: #087da0;
@@ -305,15 +392,40 @@ nav {
 }
 
 
+.course-card p {
+    line-height: 1.8;
+}
+
+
 /* =========================
    水產資料庫
 ========================= */
 
 .seafood-section {
+    max-width: none;
+
     background: #dff6fc;
+
+    padding-left: 5%;
+
+    padding-right: 5%;
 }
 
+
+.seafood-section .section-title {
+    max-width: 1150px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+
 .seafood-grid {
+    max-width: 1150px;
+
+    margin: auto;
+
     display: grid;
 
     grid-template-columns:
@@ -321,6 +433,7 @@ nav {
 
     gap: 25px;
 }
+
 
 .seafood-card {
     overflow: hidden;
@@ -335,9 +448,14 @@ nav {
     transition: 0.3s;
 }
 
+
 .seafood-card:hover {
     transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.15);
 }
+
 
 .seafood-photo {
     width: 100%;
@@ -349,9 +467,11 @@ nav {
     display: block;
 }
 
+
 .seafood-info {
     padding: 20px;
 }
+
 
 .seafood-info h3 {
     margin-top: 0;
@@ -361,11 +481,15 @@ nav {
     font-size: 23px;
 }
 
+
 .seafood-info p {
     line-height: 1.7;
 
     color: #426675;
+
+    min-height: 58px;
 }
+
 
 .more-button {
     display: inline-block;
@@ -381,6 +505,33 @@ nav {
     text-decoration: none;
 
     font-size: 14px;
+
+    transition: 0.3s;
+}
+
+
+.more-button:hover {
+    background: #075c7a;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================
+   SVG 海洋裝飾
+========================= */
+
+.ocean-decoration {
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+
+.ocean-decoration svg {
+    max-width: 600px;
+
+    width: 90%;
 }
 
 
@@ -392,6 +543,7 @@ nav {
     background: white;
 }
 
+
 .sustainable-grid {
     display: grid;
 
@@ -400,6 +552,7 @@ nav {
 
     gap: 20px;
 }
+
 
 .sustainable-card {
     padding: 30px 20px;
@@ -411,31 +564,26 @@ nav {
     background: #effcf8;
 
     border: 1px solid #cbeee4;
+
+    transition: 0.3s;
 }
+
+
+.sustainable-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+}
+
 
 .sustainable-card h3 {
     color: #147b72;
 }
 
+
 .sustainable-card p {
     line-height: 1.8;
-}
-
-
-/* =========================
-   SVG 海洋裝飾
-========================= */
-
-.ocean-decoration {
-    text-align: center;
-
-    padding: 20px;
-}
-
-.ocean-decoration svg {
-    max-width: 600px;
-
-    width: 90%;
 }
 
 
@@ -455,9 +603,11 @@ footer {
     color: white;
 }
 
+
 footer h2 {
     margin: 0 0 10px;
 }
+
 
 footer p {
     margin: 5px;
@@ -468,16 +618,7 @@ footer p {
    手機版
 ========================= */
 
-@media (max-width: 900px) {
-
-    .hero-content h1 {
-        font-size: 42px;
-    }
-
-    .course-cards {
-        grid-template-columns:
-            1fr;
-    }
+@media (max-width: 1000px) {
 
     .seafood-grid {
         grid-template-columns:
@@ -491,6 +632,21 @@ footer p {
 
 }
 
+
+@media (max-width: 900px) {
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .course-cards {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
 @media (max-width: 600px) {
 
     nav {
@@ -503,6 +659,12 @@ footer p {
         gap: 15px;
     }
 
+
+    .logo {
+        font-size: 21px;
+    }
+
+
     .menu {
         gap: 12px;
 
@@ -511,26 +673,76 @@ footer p {
         justify-content: center;
     }
 
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
     .hero {
         min-height: 600px;
     }
+
 
     .hero-content {
         padding-top: 100px;
     }
 
+
     .hero-content h1 {
         font-size: 34px;
     }
+
 
     .hero-content p {
         font-size: 18px;
     }
 
+
+    .section {
+        padding: 50px 18px;
+    }
+
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+
+    .course-svg-section {
+        padding: 50px 15px;
+    }
+
+
+    .course-title h2 {
+        font-size: 30px;
+    }
+
+
+    .course-map {
+        border-radius: 20px;
+    }
+
+
+    .course-intro {
+        margin: 0 18px 50px;
+
+        padding: 30px 20px;
+    }
+
+
+    .seafood-section {
+        padding-left: 18px;
+
+        padding-right: 18px;
+    }
+
+
     .seafood-grid {
         grid-template-columns:
             1fr;
     }
+
 
     .sustainable-grid {
         grid-template-columns:
@@ -563,30 +775,22 @@ footer p {
     <div class="menu">
 
         <a href="#home">
-
             🏠 首頁
-
         </a>
 
 
         <a href="#course">
-
             📚 課程內容
-
         </a>
 
 
         <a href="#seafood">
-
             🐟 水產資料
-
         </a>
 
 
         <a href="#sustainable">
-
             🌱 永續飲食
-
         </a>
 
     </div>
@@ -619,7 +823,10 @@ footer p {
 
     <!-- 雲 -->
 
-    <g fill="white" opacity="0.8">
+    <g
+        fill="white"
+        opacity="0.8"
+    >
 
         <ellipse
             cx="250"
@@ -817,7 +1024,7 @@ footer p {
     </g>
 
 
-    <!-- SVG 氣泡 -->
+    <!-- 氣泡 -->
 
     <circle
         cx="150"
@@ -872,18 +1079,20 @@ footer p {
 
 
 <!-- =========================
-     課程介紹
+     SVG 課程內容
 ========================= -->
 
-<!-- =========================
-     SVG 澎湖水產飲食課內容
-========================= -->
+<section
+    class="course-svg-section"
+    id="course"
+>
 
-<section class="course-svg-section" id="course">
 
     <div class="course-title">
 
-        <h2>📚 澎湖水產飲食課</h2>
+        <h2>
+            📚 澎湖水產飲食課
+        </h2>
 
         <p>
             從澎湖的海洋資源出發，
@@ -899,6 +1108,7 @@ footer p {
         xmlns="http://www.w3.org/2000/svg"
     >
 
+
         <!-- 背景 -->
 
         <rect
@@ -909,7 +1119,7 @@ footer p {
         />
 
 
-        <!-- 裝飾海浪 -->
+        <!-- 海浪 -->
 
         <path
             d="
@@ -934,6 +1144,7 @@ footer p {
             fill="#087da0"
         />
 
+
         <text
             x="600"
             y="305"
@@ -944,6 +1155,7 @@ footer p {
         >
             澎湖
         </text>
+
 
         <text
             x="600"
@@ -1012,6 +1224,7 @@ footer p {
             >
                 認識水產
             </text>
+
 
             <text
                 x="230"
@@ -1092,6 +1305,7 @@ footer p {
                 飲食文化
             </text>
 
+
             <text
                 x="970"
                 y="320"
@@ -1133,6 +1347,7 @@ footer p {
                 stroke-width="9"
             />
 
+
             <path
                 d="
                 M180 490
@@ -1154,6 +1369,7 @@ footer p {
             >
                 海洋資源
             </text>
+
 
             <text
                 x="230"
@@ -1195,6 +1411,7 @@ footer p {
                 fill="#55ad91"
             />
 
+
             <path
                 d="
                 M970 515
@@ -1215,6 +1432,7 @@ footer p {
             >
                 永續飲食
             </text>
+
 
             <text
                 x="970"
@@ -1241,6 +1459,7 @@ footer p {
             stroke-dasharray="10 10"
         />
 
+
         <line
             x1="885"
             y1="180"
@@ -1251,6 +1470,7 @@ footer p {
             stroke-dasharray="10 10"
         />
 
+
         <line
             x1="315"
             y1="470"
@@ -1260,6 +1480,7 @@ footer p {
             stroke-width="5"
             stroke-dasharray="10 10"
         />
+
 
         <line
             x1="885"
@@ -1275,7 +1496,14 @@ footer p {
 
 </section>
 
-<div class="course-intro">
+
+
+<!-- =========================
+     課程介紹
+========================= -->
+
+<section class="course-intro">
+
 
     <div class="section-title">
 
@@ -1293,6 +1521,8 @@ footer p {
 
     <div class="course-cards">
 
+
+        <!-- 認識水產 -->
 
         <div class="course-card">
 
@@ -1321,9 +1551,11 @@ footer p {
 
             </div>
 
+
             <h3>
                 認識水產
             </h3>
+
 
             <p>
                 認識澎湖常見的水產種類，
@@ -1333,17 +1565,19 @@ footer p {
         </div>
 
 
+        <!-- 飲食文化 -->
+
         <div class="course-card">
 
             <div class="icon-circle">
-
                 🍽️
-
             </div>
+
 
             <h3>
                 飲食文化
             </h3>
+
 
             <p>
                 探索澎湖在地飲食文化
@@ -1353,17 +1587,19 @@ footer p {
         </div>
 
 
+        <!-- 永續飲食 -->
+
         <div class="course-card">
 
             <div class="icon-circle">
-
                 🌱
-
             </div>
+
 
             <h3>
                 永續飲食
             </h3>
+
 
             <p>
                 思考如何珍惜海洋資源，
@@ -1372,9 +1608,8 @@ footer p {
 
         </div>
 
-    </div>
 
-</div>
+    </div>
 
 </section>
 
@@ -1390,253 +1625,295 @@ footer p {
 >
 
 
-<div class="section-title">
+    <div class="section-title">
 
-    <h2>
-        🐟 澎湖水產資料庫
-    </h2>
-
-    <p>
-        認識澎湖常見的水產與海洋食材
-    </p>
-
-</div>
+        <h2>
+            🐟 澎湖水產資料庫
+        </h2>
 
 
-<div class="seafood-grid">
-
-
-    <!-- 小管 -->
-
-    <div class="seafood-card">
-
-        <img
-            class="seafood-photo"
-            src="images/squid.jpg"
-            alt="澎湖小管"
-        >
-
-        <div class="seafood-info">
-
-            <h3>
-                🦑 小管
-            </h3>
-
-            <p>
-                澎湖代表性的海產之一，
-                肉質鮮嫩，常見於在地飲食文化。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
-            >
-                查看介紹 →
-            </a>
-
-        </div>
+        <p>
+            認識澎湖常見的水產與海洋食材
+        </p>
 
     </div>
 
 
-    <!-- 牡蠣 -->
+    <div class="seafood-grid">
 
-    <div class="seafood-card">
 
-        <img
-            class="seafood-photo"
-            src="images/oyster.jpg"
-            alt="牡蠣"
-        >
+        <!-- =================
+             小管
+        ================= -->
 
-        <div class="seafood-info">
+        <div class="seafood-card">
 
-            <h3>
-                🦪 牡蠣
-            </h3>
-
-            <p>
-                常見海洋食材，
-                可以製作多種特色料理。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
+            <img
+                class="seafood-photo"
+                src="images/squid.jpg"
+                alt="澎湖小管"
             >
-                查看介紹 →
-            </a>
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🦑 小管
+                </h3>
+
+
+                <p>
+                    澎湖代表性的海產之一，
+                    肉質鮮嫩，常見於在地飲食文化。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
 
-    <!-- 丁香魚 -->
+        <!-- =================
+             牡蠣
+        ================= -->
 
-    <div class="seafood-card">
+        <div class="seafood-card">
 
-        <img
-            class="seafood-photo"
-            src="images/anchovy.jpg"
-            alt="丁香魚"
-        >
-
-        <div class="seafood-info">
-
-            <h3>
-                🐟 丁香魚
-            </h3>
-
-            <p>
-                體型小巧、味道鮮美，
-                可以加工或直接料理。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
+            <img
+                class="seafood-photo"
+                src="images/oyster.jpg"
+                alt="牡蠣"
             >
-                查看介紹 →
-            </a>
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🦪 牡蠣
+                </h3>
+
+
+                <p>
+                    常見海洋食材，
+                    可以製作多種特色料理。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
 
-    <!-- 花枝 -->
+        <!-- =================
+             丁香魚
+        ================= -->
 
-    <div class="seafood-card">
+        <div class="seafood-card">
 
-        <img
-            class="seafood-photo"
-            src="images/cuttlefish.jpg"
-            alt="花枝"
-        >
-
-        <div class="seafood-info">
-
-            <h3>
-                🦑 花枝
-            </h3>
-
-            <p>
-                口感Q彈，
-                是常見的海鮮食材。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
+            <img
+                class="seafood-photo"
+                src="images/anchovy.jpg"
+                alt="丁香魚"
             >
-                查看介紹 →
-            </a>
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🐟 丁香魚
+                </h3>
+
+
+                <p>
+                    體型小巧、味道鮮美，
+                    可以加工或直接料理。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
 
-    <!-- 章魚 -->
+        <!-- =================
+             花枝
+        ================= -->
 
-    <div class="seafood-card">
+        <div class="seafood-card">
 
-        <img
-            class="seafood-photo"
-            src="images/octopus.jpg"
-            alt="章魚"
-        >
-
-        <div class="seafood-info">
-
-            <h3>
-                🐙 章魚
-            </h3>
-
-            <p>
-                肉質有嚼勁，
-                是澎湖飲食中的常見食材。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
+            <img
+                class="seafood-photo"
+                src="images/cuttlefish.jpg"
+                alt="花枝"
             >
-                查看介紹 →
-            </a>
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🦑 花枝
+                </h3>
+
+
+                <p>
+                    口感Q彈，
+                    是常見的海鮮食材。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
 
-    <!-- 鮮魚 -->
+        <!-- =================
+             章魚
+        ================= -->
 
-    <div class="seafood-card">
+        <div class="seafood-card">
 
-        <img
-            class="seafood-photo"
-            src="images/fish.jpg"
-            alt="澎湖鮮魚"
-        >
-
-        <div class="seafood-info">
-
-            <h3>
-                🐠 鮮魚
-            </h3>
-
-            <p>
-                澎湖周圍海域具有豐富的魚類資源。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
+            <img
+                class="seafood-photo"
+                src="images/octopus.jpg"
+                alt="章魚"
             >
-                查看介紹 →
-            </a>
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🐙 章魚
+                </h3>
+
+
+                <p>
+                    肉質有嚼勁，
+                    是澎湖飲食中的常見食材。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
 
-    <!-- 海菜 -->
+        <!-- =================
+             鮮魚
+        ================= -->
 
-    <div class="seafood-card">
+        <div class="seafood-card">
 
-        <img
-            class="seafood-photo"
-            src="images/seaweed.jpg"
-            alt="澎湖海菜"
-        >
-
-        <div class="seafood-info">
-
-            <h3>
-                🌿 海菜
-            </h3>
-
-            <p>
-                天然的海洋蔬菜，
-                也是澎湖特色食材。
-            </p>
-
-            <a
-                class="more-button"
-                href="seafood.html"
+            <img
+                class="seafood-photo"
+                src="images/fish.jpg"
+                alt="澎湖鮮魚"
             >
-                查看介紹 →
-            </a>
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🐠 鮮魚
+                </h3>
+
+
+                <p>
+                    澎湖周圍海域具有豐富的魚類資源。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
 
         </div>
 
+
+
+        <!-- =================
+             海菜
+        ================= -->
+
+        <div class="seafood-card">
+
+            <img
+                class="seafood-photo"
+                src="images/seaweed.jpg"
+                alt="澎湖海菜"
+            >
+
+
+            <div class="seafood-info">
+
+                <h3>
+                    🌿 海菜
+                </h3>
+
+
+                <p>
+                    天然的海洋蔬菜，
+                    也是澎湖特色食材。
+                </p>
+
+
+                <a
+                    class="more-button"
+                    href="seafood.html"
+                >
+                    查看介紹 →
+                </a>
+
+            </div>
+
+        </div>
+
+
     </div>
-
-
-</div>
 
 </section>
 
@@ -1648,9 +1925,11 @@ footer p {
 
 <div class="ocean-decoration">
 
+
 <svg
     viewBox="0 0 700 180"
 >
+
 
     <!-- 海草 -->
 
@@ -1660,6 +1939,7 @@ footer p {
         stroke-width="10"
         fill="none"
     />
+
 
     <path
         d="M110 160 C150 110 120 80 145 30"
@@ -1681,10 +1961,12 @@ footer p {
             fill="#087da0"
         />
 
+
         <polygon
             points="45,0 90,-35 90,35"
             fill="#087da0"
         />
+
 
         <circle
             cx="-25"
@@ -1708,6 +1990,7 @@ footer p {
         stroke-width="5"
     />
 
+
     <line
         x1="540"
         y1="145"
@@ -1716,6 +1999,7 @@ footer p {
         stroke="#087da0"
         stroke-width="3"
     />
+
 
 </svg>
 
@@ -1732,137 +2016,119 @@ footer p {
     id="sustainable"
 >
 
-<div class="section-title">
 
-    <h2>
-        🌱 永續飲食
-    </h2>
+    <div class="section-title">
 
-    <p>
-        從日常飲食開始，一起珍惜澎湖的海洋資源。
-    </p>
+        <h2>
+            🌱 永續飲食
+        </h2>
 
-</div>
-
-
-<div class="sustainable-grid">
-
-
-    <div class="sustainable-card">
-
-        <h3>
-            🌊 珍惜海洋
-        </h3>
 
         <p>
-            認識海洋資源，
-            建立珍惜海洋的觀念。
+            從日常飲食開始，一起珍惜澎湖的海洋資源。
         </p>
 
     </div>
 
 
-    <div class="sustainable-card">
+    <div class="sustainable-grid">
 
-        <h3>
-            🐟 在地食材
-        </h3>
 
-        <p>
-            選擇在地食材，
-            認識澎湖飲食文化。
-        </p>
+        <!-- 珍惜海洋 -->
+
+        <div class="sustainable-card">
+
+            <h3>
+                🌊 珍惜海洋
+            </h3>
+
+
+            <p>
+                認識海洋資源，
+                建立珍惜海洋的觀念。
+            </p>
+
+        </div>
+
+
+        <!-- 在地食材 -->
+
+        <div class="sustainable-card">
+
+            <h3>
+                🐟 在地食材
+            </h3>
+
+
+            <p>
+                選擇在地食材，
+                認識澎湖飲食文化。
+            </p>
+
+        </div>
+
+
+        <!-- 減少浪費 -->
+
+        <div class="sustainable-card">
+
+            <h3>
+                ♻️ 減少浪費
+            </h3>
+
+
+            <p>
+                適量準備食物，
+                減少食物浪費。
+            </p>
+
+        </div>
+
+
+        <!-- 友善環境 -->
+
+        <div class="sustainable-card">
+
+            <h3>
+                🌱 友善環境
+            </h3>
+
+
+            <p>
+                從生活中的小選擇，
+                開始實踐永續飲食。
+            </p>
+
+        </div>
+
 
     </div>
-
-
-    <div class="sustainable-card">
-
-        <h3>
-            ♻️ 減少浪費
-        </h3>
-
-        <p>
-            適量準備食物，
-            減少食物浪費。
-        </p>
-
-    </div>
-
-
-    <div class="sustainable-card">
-
-        <h3>
-            🌱 友善環境
-        </h3>
-
-        <p>
-            從生活中的小選擇，
-            開始實踐永續飲食。
-        </p>
-
-    </div>
-
-
-</div>
 
 </section>
 
 
-/* =========================
-   SVG 課程內容
-========================= */
 
-.course-svg-section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 80px 20px;
-}
-
-.course-title {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.course-title h2 {
-    font-size: 38px;
-    color: #087da0;
-    margin-bottom: 12px;
-}
-
-.course-title p {
-    font-size: 18px;
-    line-height: 1.8;
-    color: #426675;
-}
-
-.course-map {
-    display: block;
-    width: 100%;
-    height: auto;
-
-    border-radius: 35px;
-
-    box-shadow:
-        0 8px 30px rgba(0,0,0,0.12);
-}
 <!-- =========================
      Footer
 ========================= -->
 
 <footer>
 
+
     <h2>
         🌊 澎湖水產飲食課
     </h2>
+
 
     <p>
         認識水產・探索飲食・珍惜海洋
     </p>
 
+
     <p>
         © 2026 個人網站
     </p>
+
 
 </footer>
 
