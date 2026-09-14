@@ -1,19 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
-    <title>我的個人網站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>澎湖海味：水產 × 永續飲食</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, "Microsoft JhengHei", sans-serif;
+            background-color: #f4f9fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #2b7a9b;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 18px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2b7a9b;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        .section h2 {
+            color: #2b7a9b;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            background-color: #eef7fa;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            color: #24677f;
+        }
+
+        footer {
+            background-color: #2b7a9b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>我的個人網站</h1>
+    <header>
+        <h1>澎湖海味：水產 × 永續飲食</h1>
+        <p>認識澎湖水產，探索在地與永續的飲食方式</p>
+    </header>
 
-    <h2>關於我</h2>
-    <p>大家好，我是一名學生。</p>
+    <nav>
+        <a href="#about">關於網站</a>
+        <a href="#seafood">澎湖水產</a>
+        <a href="#sustainable">永續飲食</a>
+    </nav>
 
-    <h2>我的興趣</h2>
-    <p>我喜歡學習程式設計和製作網站。</p>
+    <div class="container">
+
+        <section class="section" id="about">
+            <h2>關於網站</h2>
+
+            <p>
+                這個網站介紹澎湖常見的水產與飲食文化，
+                並從在地食材與永續飲食的角度，
+                認識澎湖豐富的海洋資源。
+            </p>
+
+            <p>
+                希望透過這個網站，讓更多人了解澎湖的水產特色，
+                也思考如何用更永續的方式享用海洋食材。
+            </p>
+        </section>
+
+
+        <section class="section" id="seafood">
+
+            <h2>🐟 澎湖水產資料庫</h2>
+
+            <p>
+                認識澎湖常見的水產及其特色。
+            </p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>小管</h3>
+                    <p>介紹小管的特色、常見料理與保存方式。</p>
+                </div>
+
+                <div class="card">
+                    <h3>牡蠣</h3>
+                    <p>介紹澎湖牡蠣的特色與常見料理。</p>
+                </div>
+
+                <div class="card">
+                    <h3>丁香魚</h3>
+                    <p>介紹丁香魚的特色、料理與保存方式。</p>
+                </div>
+
+                <div class="card">
+                    <h3>花枝</h3>
+                    <p>介紹花枝的特色與常見料理。</p>
+                </div>
+
+                <div class="card">
+                    <h3>章魚</h3>
+                    <p>介紹章魚的特色與飲食方式。</p>
+                </div>
+
+                <div class="card">
+                    <h3>鮮魚</h3>
+                    <p>介紹澎湖常見鮮魚與料理方式。</p>
+                </div>
+
+                <div class="card">
+                    <h3>海菜</h3>
+                    <p>介紹澎湖海菜及其飲食特色。</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section" id="sustainable">
+
+            <h2>🌱 我的澎湖永續飲食提案</h2>
+
+            <p>
+                永續飲食不只是選擇食物，也包含如何減少浪費、
+                使用在地食材以及降低對環境的影響。
+            </p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>減少食物浪費</h3>
+                    <p>珍惜食材，適量準備食物，減少不必要的浪費。</p>
+                </div>
+
+                <div class="card">
+                    <h3>使用在地食材</h3>
+                    <p>優先選擇澎湖在地水產與食材，支持在地飲食文化。</p>
+                </div>
+
+                <div class="card">
+                    <h3>減少一次性用品</h3>
+                    <p>外帶或購買食物時，盡量減少一次性餐具與包裝。</p>
+                </div>
+
+                <div class="card">
+                    <h3>選擇當季食材</h3>
+                    <p>依照季節選擇適合的食材，建立更永續的飲食習慣。</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>澎湖海味：水產 × 永續飲食</p>
+        <p>個人網站</p>
+    </footer>
 
 </body>
 </html>
